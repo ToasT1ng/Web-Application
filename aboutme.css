@@ -5,6 +5,7 @@ body {
     background-image: url("cse326bg.jpg");
     background-repeat: no-repeat;
     background-position: top right;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -20,17 +21,9 @@ dt {
 	font-weight: bold;
 }
 
-.first{
+p::first-letter{
 	font-weight: bold;
 	font-size: 150%;
-}
-
-a:link { 
-	color: #FF4F4F; 
-}
-
-a:visited { 
-	color: #FF4F4F; 
 }
 
 h1,h2 {
@@ -49,8 +42,9 @@ blockquote, ul, ol {
 	text-align: left;
 }
 
-a:link, a:visited {
+a {
 	text-decoration: none;
+	color: #FF4F4F;
 }
 
 a:hover{
@@ -69,6 +63,10 @@ ul {
 	list-style-type: square;
 }
 
-.favorite{
-	outline: #F7931E ridge;
+img{
+	outline: #F7931E ridge thick;
+}
+
+a>img{
+	outline: none;
 }
